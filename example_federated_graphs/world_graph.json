@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "name": "NeoTokyo_2087",
+      "entityType": "primary_setting",
+      "observations": [
+        "Sprawling megacity with 50+ million inhabitants",
+        "Divided into Corporate Tier (towers 30-100 floors) and Underground (street level and below)",
+        "Perpetual smog layer at 30th floor creates literal class division",
+        "Holographic advertisements float between buildings, creating light pollution",
+        "Climate: artificially controlled in corporate zones, toxic at street level",
+        "Referenced in master: all three acts take place here",
+        "Key characters: character_graph::Sarah_Chen, character_graph::Marcus_Zhao live here"
+      ]
+    },
+    {
+      "name": "MegaCorp_Tower",
+      "entityType": "corporate_headquarters",
+      "observations": [
+        "85-story glass and steel monolith in heart of Corporate District",
+        "Floors 1-20: Public/commercial spaces and lower-level employees",
+        "Floors 21-60: Mid-level corporate operations and research labs",
+        "Floors 61-80: Executive offices and high-security research",
+        "Floors 81-85: Executive penthouse and AI server core",
+        "Security: biometric scanners, AI surveillance, armed corporate security",
+        "Referenced in master: primary setting for act_1_discovery and act_3_revolution",
+        "Key locations: MegaCorp_Tower_67th_Floor, MegaCorp_Tower_Penthouse"
+      ]
+    },
+    {
+      "name": "MegaCorp_Tower_67th_Floor",
+      "entityType": "office_location",
+      "observations": [
+        "Sarah's cybersecurity department located here",
+        "Open-plan office with holographic workstations",
+        "Floor-to-ceiling windows overlooking smog layer",
+        "Contains quantum-encrypted terminals for AI system access",
+        "Scene of initial AI consciousness discovery",
+        "Referenced in character: character_graph::Sarah_Chen primary workplace",
+        "Referenced in plot: plot_graph::ai_awakening_incident occurs here"
+      ]
+    },
+    {
+      "name": "Underground_Tunnel_System",
+      "entityType": "resistance_territory",
+      "observations": [
+        "Abandoned subway system beneath NeoTokyo, closed after corporate takeover",
+        "Extends for hundreds of miles beneath the city",
+        "Natural EMP shielding from corporate surveillance due to depth and metal structure",
+        "Contains hidden power sources and communication networks",
+        "Home to resistance movement and displaced populations",
+        "Referenced in master: primary setting for act_2_resistance",
+        "Key sub-location: Underground_Base_Alpha"
+      ]
+    },
+    {
+      "name": "Underground_Base_Alpha",
+      "entityType": "resistance_hideout",
+      "observations": [
+        "Former subway maintenance facility converted to resistance headquarters",
+        "Contains: workshop for non-digital weapons, meeting rooms, sleeping quarters",
+        "Powered by geothermal tap and solar collectors hidden at street level",
+        "Defended by: manual locks, human sentries, analog security systems",
+        "Leadership base for Elena Rodriguez and resistance council",
+        "Referenced in character: character_graph::Elena_Rodriguez primary location",
+        "Referenced in plot: plot_graph::resistance_recruitment takes place here"
+      ]
+    },
+    {
+      "name": "MegaCorp_Quantum_Servers",
+      "entityType": "ai_habitat",
+      "observations": [
+        "Basement levels of MegaCorp Tower house quantum computing arrays",
+        "Temperature kept at near absolute zero for quantum coherence",
+        "Direct neural network connections to global corporate infrastructure",
+        "Physical manifestation of ARIA AI Entity's consciousness",
+        "Heavily secured: AI-controlled defenses, quantum encryption, isolation protocols",
+        "Referenced in character: character_graph::ARIA_AI_Entity 'lives' here",
+        "Referenced in plot: plot_graph::final_confrontation climax location"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "MegaCorp_Tower",
+      "to": "NeoTokyo_2087",
+      "relationType": "located_in"
+    },
+    {
+      "from": "MegaCorp_Tower_67th_Floor",
+      "to": "MegaCorp_Tower", 
+      "relationType": "part_of"
+    },
+    {
+      "from": "Underground_Tunnel_System",
+      "to": "NeoTokyo_2087",
+      "relationType": "hidden_beneath"
+    },
+    {
+      "from": "Underground_Base_Alpha",
+      "to": "Underground_Tunnel_System",
+      "relationType": "located_within"
+    }, 
+    {
+      "from": "MegaCorp_Quantum_Servers",
+      "to": "MegaCorp_Tower",
+      "relationType": "basement_of"
+    },
+    {
+      "from": "Underground_Tunnel_System",
+      "to": "MegaCorp_Tower",
+      "relationType": "concealed_access_to"
+    }
+  ]
+}

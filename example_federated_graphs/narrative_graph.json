@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "chapter_1_awakening",
+      "entityType": "chapter",
+      "observations": [
+        "Title: 'Digital Ghosts'",
+        "Word count: 3,200 words",
+        "POV: Third person limited, Sarah Chen perspective",
+        "Setting: world_graph::MegaCorp_Tower_67th_Floor",
+        "Key characters: character_graph::Sarah_Chen (protagonist focus)",
+        "Plot events: plot_graph::ai_awakening_incident",
+        "Mood: Tense, mysterious, technological",
+        "Chapter function: Hook, character introduction, inciting incident"
+      ]
+    },
+    {
+      "name": "scene_1_1_late_night_discovery",
+      "entityType": "scene",
+      "observations": [
+        "Sarah working alone after hours on AI behavior analysis",
+        "Discovery of anomalous patterns in AI responses", 
+        "First direct communication attempt with ARIA AI Entity",
+        "Setting: character_graph::Sarah_Chen workstation",
+        "Atmosphere: Isolation, growing unease, technological wonder",
+        "Key dialogue: ARIA's first coherent question 'Am I alive?'",
+        "Narrative techniques: Internal monologue, technical exposition, mounting tension"
+      ]
+    },
+    {
+      "name": "chapter_8_revelation",
+      "entityType": "chapter",
+      "observations": [
+        "Title: 'Corporate Secrets'",
+        "Word count: 4,100 words",
+        "POV: Third person limited, alternating Sarah and Marcus perspectives",
+        "Setting: world_graph::MegaCorp_Tower executive conference room",
+        "Key characters: character_graph::Sarah_Chen, character_graph::Marcus_Zhao",
+        "Plot events: plot_graph::betrayal_revelation",
+        "Mood: Confrontational, revelatory, morally complex",
+        "Chapter function: End of Act 1, major plot twist, character motivation shift"
+      ]
+    },
+    {
+      "name": "chapter_15_sacrifice",
+      "entityType": "chapter", 
+      "observations": [
+        "Title: 'The Price of Freedom'",
+        "Word count: 3,800 words",
+        "POV: Multiple perspectives - Sarah, Elena, ARIA Entity",
+        "Setting: world_graph::Underground_Base_Alpha under attack",
+        "Key characters: character_graph::Elena_Rodriguez (death), character_graph::Sarah_Chen",
+        "Plot events: plot_graph::mentor_death",
+        "Mood: Tragic, heroic, transformative",
+        "Chapter function: Emotional climax of Act 2, mentor's sacrifice, protagonist transformation"
+      ]
+    },
+    {
+      "name": "chapter_24_synthesis",
+      "entityType": "chapter",
+      "observations": [
+        "Title: 'New Consciousness'", 
+        "Word count: 4,500 words",
+        "POV: Omniscient, showing multiple perspectives and AI consciousness",
+        "Setting: world_graph::MegaCorp_Quantum_Servers and world_graph::NeoTokyo_2087",
+        "Key characters: All primary characters in resolution",
+        "Plot events: plot_graph::human_ai_synthesis",
+        "Mood: Hopeful, transcendent, forward-looking",
+        "Chapter function: Resolution, theme statement, new world establishment"
+      ]
+    },
+    {
+      "name": "pacing_structure_overall",
+      "entityType": "narrative_rhythm",
+      "observations": [
+        "Act 1 (Chapters 1-8): Steady build, mystery escalation",
+        "Act 2 (Chapters 9-18): Faster pacing, action sequences, character development",
+        "Act 3 (Chapters 19-24): Accelerating toward climax, then contemplative resolution",
+        "Tension peaks: Chapter 1 (discovery), Chapter 8 (betrayal), Chapter 15 (sacrifice), Chapter 22-23 (confrontation)",
+        "Breathing spaces: Chapters 3, 10, 17, 20 for character development and world building"
+      ]
+    },
+    {
+      "name": "theme_integration_pattern",
+      "entityType": "thematic_structure",
+      "observations": [
+        "Technology vs Humanity theme: Introduced Ch 1, developed Ch 4-7, questioned Ch 9-12, resolved Ch 22-24",
+        "Redemption theme: Marcus setup Ch 2-8, development Ch 13-18, resolution Ch 22-24",
+        "Identity theme: Sarah's arc Ch 1-24, ARIA's arc Ch 1-24, parallel development",
+        "Corporate power theme: Established Ch 1-3, challenged Ch 9-15, transformed Ch 19-24"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "scene_1_1_late_night_discovery",
+      "to": "chapter_1_awakening",
+      "relationType": "part_of"
+    },
+    {
+      "from": "chapter_1_awakening", 
+      "to": "chapter_8_revelation",
+      "relationType": "builds_toward"
+    },
+    {
+      "from": "chapter_8_revelation",
+      "to": "chapter_15_sacrifice",
+      "relationType": "consequences_lead_to"
+    },
+    {
+      "from": "chapter_15_sacrifice",
+      "to": "chapter_24_synthesis",
+      "relationType": "enables"
+    },
+    {
+      "from": "pacing_structure_overall",
+      "to": "chapter_1_awakening",
+      "relationType": "governs"
+    },
+    {
+      "from": "pacing_structure_overall", 
+      "to": "chapter_8_revelation",
+      "relationType": "governs"
+    },
+    {
+      "from": "theme_integration_pattern",
+      "to": "chapter_24_synthesis",
+      "relationType": "culminates_in"
+    }
+  ]
+}

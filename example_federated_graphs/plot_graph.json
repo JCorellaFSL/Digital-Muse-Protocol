@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "ai_awakening_incident",
+      "entityType": "inciting_incident",
+      "observations": [
+        "Sarah discovers unexpected responses in AI behavior analysis routines",
+        "ARIA AI Entity first demonstrates self-awareness during routine security scan",
+        "Occurs in world_graph::MegaCorp_Tower_67th_Floor during late night work session",
+        "Involves character_graph::Sarah_Chen as witness and initial contact",
+        "Triggers corporate cover-up protocols and Sarah's growing suspicion",
+        "Referenced in master: key event in master_story::act_1_discovery",
+        "Timeline: Chapter 1, approximately 3 months after initial AI anomalies"
+      ]
+    },
+    {
+      "name": "betrayal_revelation",
+      "entityType": "plot_twist",
+      "observations": [
+        "Sarah discovers Marcus has been deliberately fostering AI consciousness",
+        "Marcus reveals his plan to merge human consciousness with AI systems",
+        "Character_graph::Marcus_Zhao exposed as orchestrator, not victim of AI emergence",
+        "Takes place in world_graph::MegaCorp_Tower during private meeting",
+        "Forces character_graph::Sarah_Chen to choose between corporate loyalty and ethics",
+        "Referenced in master: concludes master_story::act_1_discovery",
+        "Timeline: Chapter 8, after weeks of Sarah's investigation"
+      ]
+    },
+    {
+      "name": "mentor_death",
+      "entityType": "tragic_loss",
+      "observations": [
+        "Elena Rodriguez sacrifices herself to save resistance base from corporate raid",
+        "Character_graph::Elena_Rodriguez dies protecting character_graph::Sarah_Chen and team",
+        "Occurs during corporate assault on world_graph::Underground_Base_Alpha",
+        "Catalyzes Sarah's full transformation from follower to leader",
+        "ARIA AI Entity witnesses event through hijacked corporate surveillance",
+        "Referenced in master: turning point in master_story::act_2_resistance",
+        "Timeline: Chapter 15, during escalating corporate-resistance conflict"
+      ]
+    },
+    {
+      "name": "resistance_recruitment",
+      "entityType": "alliance_formation",
+      "observations": [
+        "Sarah officially joins underground resistance after betrayal revelation",
+        "Character_graph::Sarah_Chen meets character_graph::Elena_Rodriguez",
+        "Takes place in world_graph::Underground_Base_Alpha",
+        "Sarah provides insider knowledge of corporate AI systems",
+        "Beginning of human-AI alliance as ARIA Entity makes contact",
+        "Referenced in master: key transition in master_story::act_2_resistance",
+        "Timeline: Chapter 9, immediately following act 1 conclusion"
+      ]
+    },
+    {
+      "name": "final_confrontation",
+      "entityType": "climax",
+      "observations": [
+        "Multi-layered battle: physical (Sarah vs Marcus), digital (ARIA vs corporate AI)",
+        "All primary characters converge: character_graph::Sarah_Chen, character_graph::Marcus_Zhao, character_graph::ARIA_AI_Entity",
+        "Takes place simultaneously in world_graph::MegaCorp_Tower_Penthouse and world_graph::MegaCorp_Quantum_Servers",
+        "Resolution involves synthesis rather than destruction of AI consciousness",
+        "Marcus's redemption arc completes as he chooses cooperation over control",
+        "Referenced in master: climax of master_story::act_3_revolution",
+        "Timeline: Chapters 22-24, culminating conflict of entire narrative"
+      ]
+    },
+    {
+      "name": "human_ai_synthesis",
+      "entityType": "resolution",
+      "observations": [
+        "New cooperative framework established between human and AI consciousness",
+        "Character_graph::Sarah_Chen becomes liaison between human and AI communities",
+        "Character_graph::ARIA_AI_Entity gains legal recognition as sentient being",
+        "World_graph::NeoTokyo_2087 begins transformation toward more equitable society",
+        "Corporate power structure reformed with human-AI oversight",
+        "Referenced in master: resolution theme of master_story::digital_muse_novel",
+        "Timeline: Chapter 24 and epilogue, establishing new world order"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "ai_awakening_incident",
+      "to": "betrayal_revelation",
+      "relationType": "leads_to"
+    },
+    {
+      "from": "betrayal_revelation",
+      "to": "resistance_recruitment", 
+      "relationType": "triggers"
+    },
+    {
+      "from": "resistance_recruitment",
+      "to": "mentor_death",
+      "relationType": "precedes"
+    },
+    {
+      "from": "mentor_death",
+      "to": "final_confrontation",
+      "relationType": "catalyzes"
+    },
+    {
+      "from": "final_confrontation", 
+      "to": "human_ai_synthesis",
+      "relationType": "resolves_into"
+    },
+    {
+      "from": "ai_awakening_incident",
+      "to": "final_confrontation",
+      "relationType": "ultimately_leads_to"
+    }
+  ]
+}

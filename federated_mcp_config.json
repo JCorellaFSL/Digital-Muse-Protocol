@@ -1,0 +1,74 @@
+{
+  "mcpServers": {
+    "master_story": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "./book/memory/master_story_graph.json"
+      },
+      "autoapprove": [
+        "create_entities",
+        "create_relations",
+        "add_observations",
+        "search_nodes",
+        "read_graph"
+      ]
+    },
+    "character_memory": {
+      "command": "npx", 
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "./book/memory/character_graph.json"
+      },
+      "autoapprove": [
+        "create_entities",
+        "create_relations",
+        "add_observations",
+        "search_nodes",
+        "read_graph"
+      ]
+    },
+    "world_memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"], 
+      "env": {
+        "MEMORY_FILE_PATH": "./book/memory/world_graph.json"
+      },
+      "autoapprove": [
+        "create_entities",
+        "create_relations",
+        "add_observations",
+        "search_nodes",
+        "read_graph"
+      ]
+    },
+    "plot_memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "./book/memory/plot_graph.json"
+      },
+      "autoapprove": [
+        "create_entities",
+        "create_relations", 
+        "add_observations",
+        "search_nodes",
+        "read_graph"
+      ]
+    },
+    "narrative_memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "./book/memory/narrative_graph.json"
+      },
+      "autoapprove": [
+        "create_entities",
+        "create_relations",
+        "add_observations", 
+        "search_nodes",
+        "read_graph"
+      ]
+    }
+  }
+}

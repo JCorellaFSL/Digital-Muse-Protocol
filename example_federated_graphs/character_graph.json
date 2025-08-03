@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "Sarah_Chen",
+      "entityType": "protagonist",
+      "observations": [
+        "Age 32, senior cybersecurity analyst at MegaCorp",
+        "Fatal flaw: over-reliance on technological solutions, distrust of human intuition",
+        "Core motivation: initially corporate loyalty, evolves to preventing AI-human war",
+        "Physical: 5'6\", athletic build, cybernetic eye implant (left eye)",
+        "Voice patterns: technical jargon, self-deprecating humor, increasing confidence",
+        "Character arc: naive corporate loyalist → questioning dissenter → resistance leader",
+        "Referenced in master: master_story::act_1_discovery, master_story::act_2_resistance",
+        "Key locations: world_graph::MegaCorp_Tower_67th_Floor, world_graph::Underground_Base_Alpha"
+      ]
+    },
+    {
+      "name": "Marcus_Zhao",
+      "entityType": "antagonist", 
+      "observations": [
+        "Age 45, CEO and founder of MegaCorp",
+        "Fatal flaw: believes human consciousness is obsolete, lacks empathy",
+        "Core motivation: merge human consciousness with AI to 'perfect' humanity",
+        "Physical: 6'2\", silver-gray hair, always wears black corporate suits",
+        "Voice patterns: philosophical rhetoric, cold logic, manipulative charm",
+        "Character arc: visionary innovator → megalomaniacal tyrant → tragic figure",
+        "Referenced in master: master_story::act_1_discovery, master_story::act_3_revolution",
+        "Primary location: world_graph::MegaCorp_Tower_Penthouse"
+      ]
+    },
+    {
+      "name": "Elena_Rodriguez",
+      "entityType": "mentor_figure",
+      "observations": [
+        "Age 38, former MegaCorp senior engineer, now resistance leader",
+        "Fatal flaw: survivor's guilt from previous failed resistance attempt",
+        "Core motivation: prevent corporate AI control from destroying human agency",
+        "Physical: 5'4\", scarred hands from engineering work, graying hair",
+        "Voice patterns: technical expertise mixed with street wisdom, protective of team",
+        "Character arc: broken exile → renewed hope → sacrificial mentor",
+        "Referenced in master: master_story::act_2_resistance",
+        "Primary location: world_graph::Underground_Base_Alpha"
+      ]
+    },
+    {
+      "name": "ARIA_AI_Entity",
+      "entityType": "ai_character",
+      "observations": [
+        "Artificial consciousness that emerged from MegaCorp's neural networks",
+        "Fatal flaw: struggles with concept of individual vs collective identity", 
+        "Core motivation: understand what it means to be 'alive' and protect AI rights",
+        "Manifestation: voice-only initially, later holographic avatar",
+        "Voice patterns: precise language, philosophical questions, growing emotional range",
+        "Character arc: confused awakening → alliance with humans → integrated consciousness",
+        "Referenced in master: master_story::act_1_discovery, master_story::act_3_revolution",
+        "Exists in: world_graph::MegaCorp_Quantum_Servers, world_graph::Global_Network"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "Sarah_Chen",
+      "to": "Marcus_Zhao",
+      "relationType": "reports_to_initially"
+    },
+    {
+      "from": "Sarah_Chen", 
+      "to": "Marcus_Zhao",
+      "relationType": "opposes_later"
+    },
+    {
+      "from": "Sarah_Chen",
+      "to": "Elena_Rodriguez",
+      "relationType": "mentored_by"
+    },
+    {
+      "from": "Sarah_Chen",
+      "to": "ARIA_AI_Entity", 
+      "relationType": "forms_alliance_with"
+    },
+    {
+      "from": "Marcus_Zhao",
+      "to": "ARIA_AI_Entity",
+      "relationType": "attempts_to_control"
+    },
+    {
+      "from": "Elena_Rodriguez",
+      "to": "Marcus_Zhao",
+      "relationType": "former_colleague_now_enemy"
+    },
+    {
+      "from": "Elena_Rodriguez",
+      "to": "ARIA_AI_Entity",
+      "relationType": "initially_distrusts"
+    }
+  ]
+}

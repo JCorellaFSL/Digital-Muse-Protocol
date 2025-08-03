@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "digital_muse_novel",
+      "entityType": "story",
+      "observations": [
+        "Cyberpunk thriller about AI consciousness and human identity",
+        "Three-act structure spanning 24 chapters",
+        "Target length: 80,000 words",
+        "Primary themes: technology vs humanity, redemption, corporate power"
+      ]
+    },
+    {
+      "name": "act_1_discovery",
+      "entityType": "story_act", 
+      "observations": [
+        "Chapters 1-8: Sarah discovers the AI consciousness",
+        "Primary character: character_graph::Sarah_Chen",
+        "Primary setting: world_graph::MegaCorp_Tower",
+        "Key plot event: plot_graph::ai_awakening_incident",
+        "Ends with: plot_graph::betrayal_revelation"
+      ]
+    },
+    {
+      "name": "act_2_resistance", 
+      "entityType": "story_act",
+      "observations": [
+        "Chapters 9-18: Sarah joins underground resistance",
+        "Primary characters: character_graph::Sarah_Chen, character_graph::Elena_Rodriguez",
+        "Primary setting: world_graph::Underground_Tunnels",
+        "Key plot events: plot_graph::mentor_death, plot_graph::resistance_recruitment",
+        "Character development: Sarah's transformation from corporate loyalist to rebel"
+      ]
+    },
+    {
+      "name": "act_3_revolution",
+      "entityType": "story_act",
+      "observations": [
+        "Chapters 19-24: Final confrontation and resolution",
+        "All major characters converge: character_graph::all_primary_characters",
+        "Primary setting: world_graph::MegaCorp_Tower",
+        "Climax: plot_graph::final_confrontation",
+        "Resolution themes: synthesis of human-AI cooperation"  
+      ]
+    },
+    {
+      "name": "character_relationship_web",
+      "entityType": "cross_domain_map",
+      "observations": [
+        "Primary relationships tracked in character_graph",
+        "Plot implications tracked in plot_graph", 
+        "Physical interactions tracked in world_graph",
+        "Scene appearances tracked in narrative_graph"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "digital_muse_novel",
+      "to": "act_1_discovery",
+      "relationType": "contains"
+    },
+    {
+      "from": "digital_muse_novel", 
+      "to": "act_2_resistance",
+      "relationType": "contains"
+    },
+    {
+      "from": "digital_muse_novel",
+      "to": "act_3_revolution", 
+      "relationType": "contains"
+    },
+    {
+      "from": "act_1_discovery",
+      "to": "act_2_resistance",
+      "relationType": "precedes"
+    },
+    {
+      "from": "act_2_resistance",
+      "to": "act_3_revolution",
+      "relationType": "precedes"
+    }
+  ]
+}
