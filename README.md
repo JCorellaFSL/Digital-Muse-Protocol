@@ -6,7 +6,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Knowledge Graphs](https://img.shields.io/badge/Powered%20by-Knowledge%20Graphs-blue.svg)](https://github.com/modelcontextprotocol)
-[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io/)
+[![MCP Server](https://img.shields.io/badge/MCP-Server-green.svg)](https://modelcontextprotocol.io/)
+[![Remote Access](https://img.shields.io/badge/Remote-Access-blue.svg)](https://github.com/JCorellaFSL/Digital-Muse-Protocol)
 
 ---
 
@@ -70,43 +71,83 @@ The Digital Muse Protocol employs **persistent knowledge graphs** that serve as 
 
 ---
 
-## ⚡ Quick Start (15 Minutes)
+## ⚡ Quick Start (5 Minutes)
 
 ### Prerequisites
 - **AI Client**: Claude Desktop, Cursor, or MCP-compatible AI tool
-- **Node.js**: For MCP server installation (npx)
-- **Basic familiarity**: File management and JSON configuration
+- **Node.js**: For MCP server installation (automatic)
+- **No file copying needed** - everything works remotely!
 
-### 1. Clone and Setup
-```bash
-git clone [repository-url] my-novel-project
-cd my-novel-project
-mkdir -p book/memory book/characters book/world book/plots book/chapters
+### 1. Configure MCP Server
+Add this to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "digital-muse-protocol": {
+      "url": "https://github.com/JCorellaFSL/Digital-Muse-Protocol"
+    }
+  }
+}
 ```
 
-### 2. Configure Knowledge Graphs
-**For Simple Projects:**
-```bash
-cp mcp_memory_config.json ~/.config/claude/claude_desktop_config.json
+### 2. Create Your First Project
+Use the MCP tools to set up everything automatically:
+
+```
+"Use setup_project_structure to create a new Digital Muse Protocol project"
 ```
 
-**For Complex Projects (Recommended):**
-```bash
-cp federated_mcp_config.json ~/.config/claude/claude_desktop_config.json
+**Result**: Complete directory structure created locally!
+
+### 3. Get Memory Server Configuration
+```
+"Use get_mcp_config with type 'federated' to generate knowledge graph configuration"
 ```
 
-### 3. Start Your First Project
-1. **Read** [Core Methodology](DMProtocol_CoreMethodology.md) (10 minutes)
-2. **Follow** [Project Setup Guide](DMProtocol_ProjectSetup.md) (5 minutes)
-3. **Use** [Templates](DMProtocol_Templates.md) to create your first character
+**Result**: Complete MCP configuration for persistent memory!
 
-### 4. Test Knowledge Graph Integration
-Open Claude Desktop and try:
-```
-"Create a character entity named 'test_character' with type 'protagonist' and observation 'Setup test completed successfully'"
-```
+### 4. Start Writing with Perfect Memory
+1. **Add the memory server config** to your MCP settings
+2. **Restart your AI client**
+3. **Use templates**: `get_character_template`, `get_world_template`, `get_plot_template`
+4. **Begin Phase 0**: `get_phase_guide` with phase '0'
 
-**Expected Result**: Confirmation of entity creation and automatic file generation in `./book/memory/`
+**No file copying, no complex setup - just pure remote access to the complete Digital Muse Protocol!**
+
+---
+
+## 🛠️ MCP Tools Available
+
+This repository is a **complete MCP server** providing remote access to all Digital Muse Protocol functionality:
+
+### **Project Management Tools**
+- **`setup_project_structure`** - Create complete project directory structure
+- **`get_mcp_config`** - Generate memory server configurations (simple/federated)
+- **`validate_project_consistency`** - Check knowledge graph consistency
+
+### **Template Access Tools**
+- **`get_character_template`** - Character development with KG integration
+- **`get_world_template`** - World building with KG integration  
+- **`get_plot_template`** - Plot development with KG integration
+
+### **Phase Guide Tools**
+- **`get_phase_guide`** - Access any phase implementation guide
+  - Phase 0: Pre-Planning
+  - Phase 1: Initialization
+  - Phase 2: World Building
+  - Phase 3: Chapter Generation
+  - Phase 4: Quality Assurance
+  - Plus: Setup and Core methodology guides
+
+### **Resources Available**
+- Complete methodology documents
+- All templates and examples
+- MCP configurations  
+- Working knowledge graph examples
+- Phase-specific implementation guides
+
+**Everything accessible remotely - no file copying required!**
 
 ---
 

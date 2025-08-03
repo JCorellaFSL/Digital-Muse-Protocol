@@ -1,0 +1,35 @@
+{
+  "name": "@digital-muse-protocol/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the Digital Muse Protocol - AI-assisted fiction generation with persistent memory",
+  "main": "digital-muse-protocol-server.js",
+  "type": "module",
+  "bin": {
+    "digital-muse-protocol-server": "./digital-muse-protocol-server.js"
+  },
+  "scripts": {
+    "start": "node digital-muse-protocol-server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-writing",
+    "fiction-generation",
+    "knowledge-graph",
+    "digital-muse-protocol"
+  ],
+  "author": "Digital Muse Protocol",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JCorellaFSL/Digital-Muse-Protocol.git",
+    "directory": "mcp-server"
+  },
+  "homepage": "https://github.com/JCorellaFSL/Digital-Muse-Protocol#readme",
+  "bugs": {
+    "url": "https://github.com/JCorellaFSL/Digital-Muse-Protocol/issues"
+  }
+}
