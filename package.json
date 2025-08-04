@@ -7,6 +7,17 @@
   "bin": {
     "digital-muse-protocol": "./server.js"
   },
+  "files": [
+    "server.js",
+    "docs/**",
+    "phases/**", 
+    "tools/**",
+    "templates/**",
+    "technical/**",
+    "README.md",
+    "GETTING_STARTED.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "node server.js",
     "dev": "node --inspect server.js"

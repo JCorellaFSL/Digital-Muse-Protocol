@@ -12,6 +12,21 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Handle command line arguments
+if (process.argv.includes('--version')) {
+  console.log('1.1.0');
+  process.exit(0);
+}
+
+if (process.argv.includes('--help')) {
+  console.log('Digital Muse Protocol MCP Server v1.1.0');
+  console.log('Usage: digital-muse-protocol [options]');
+  console.log('Options:');
+  console.log('  --version    Show version number');
+  console.log('  --help       Show this help message');
+  process.exit(0);
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
