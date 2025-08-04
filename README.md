@@ -155,28 +155,31 @@ This repository is a **complete MCP server** providing remote access to all Digi
 
 ### Core Documents
 ```
-├── 📋 Foundation
+├── 📋 docs/                               # Foundation Documents
 │   ├── DMProtocol_CoreMethodology.md     # Core principles and philosophy
 │   ├── DMProtocol_ProjectSetup.md        # 15-minute setup guide
+│   ├── KG_SETUP.md                       # Essential knowledge graph implementation
+│   ├── KG_ADVANCED.md                    # Federated multi-graph architecture
 │   └── DMProtocol_KnowledgeGraph_Integration.md # KG usage throughout all phases
 │
-├── 🎯 Phase Implementation
+├── 🎯 phases/                             # Phase Implementation Guides
 │   ├── DMProtocol_Phase0_PrePlanning.md     # Project scoping
 │   ├── DMProtocol_Phase1_Initialization.md  # Roadmap creation
 │   ├── DMProtocol_Phase2_WorldBuilding.md   # Character/world development
 │   ├── DMProtocol_Phase3_ChapterGeneration.md # Iterative writing
-│   └── DMProtocol_Phase4_QualityAssurance.md  # Editing and publication
+│   └── Phase4_QualityAssurance.md           # Editing and publication
 │
-├── ⚙️ Operational Tools
-│   ├── DMProtocol_Templates.md           # Reusable templates
+├── ⚙️ tools/                              # Operational Tools
+│   ├── QualityControl_Guide.md          # Systematic consistency procedures
 │   ├── DMProtocol_Checklists.md         # Quality gates
-│   ├── DMProtocol_QualityControl.md     # Consistency procedures
 │   └── DMProtocol_Troubleshooting.md    # Problem resolution
+├── 📝 templates/                          # Reusable Templates
+│   ├── DMProtocol_Templates.md           # Character, world, plot templates
+│   └── roadmap_template.md               # Project roadmap template
 │
-└── 🔧 Technical Implementation
+└── 🔧 technical/                          # Technical Implementation
     ├── federated_mcp_config.json        # MCP server configuration
-    ├── example_federated_graphs/        # Working examples
-    └── DMProtocol_Federated_KnowledgeGraph_Architecture.md
+    └── example_federated_graphs/        # Working examples
 ```
 
 ### Active Project Structure
